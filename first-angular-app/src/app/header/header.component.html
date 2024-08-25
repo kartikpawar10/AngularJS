@@ -1,15 +1,4 @@
-<!-- <span>header works!</span>
-
-<input type="text" (input)="onChange(event)" #event>
-@for (user of users; track user) {
-@if(user.rollNo != 1000){
-<div>USERNAME : {{user.name}} , ROLLNO : {{user.rollNo}} , BRANCH :{{ user.branch}}</div>
-}@else{ 
-    USERNAME : {{user.name}} , ROLLNO : {{user.rollNo}} , BRANCH :{{ user.branch}}
-}
-} -->
-
-<div>Name - {{userName}} , status : {{isSingle?"Single":"Coder"}} , salary:{{salary | currency:"USD":"symbol"}}</div>
+<div>Name - {{name}} , status : {{isSingle?"Single":"Coder"}} , salary:{{salary | currency:"USD":"symbol"}}</div>
 <h1>{{phoneNo | countryCode}}</h1>
 <button (click)="sendData()">Send Data</button>
 <div appHighlight>Red</div>
