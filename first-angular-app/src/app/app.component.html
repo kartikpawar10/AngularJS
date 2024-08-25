@@ -1,0 +1,4 @@
+<h1>App - {{title}}</h1>
+<app-header *ngFor="let u of users" [userName]="u.name" [isSingle]="u.isSingle" [salary]="u.salary"
+    (myEvent)="receivedData($event)">
+</app-header>
